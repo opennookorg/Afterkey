@@ -1,0 +1,45 @@
+{
+  "name": "@afterkey/providers",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./google": {
+      "import": "./dist/google/index.js",
+      "types": "./dist/google/index.d.ts"
+    },
+    "./github": {
+      "import": "./dist/github/index.js",
+      "types": "./dist/github/index.d.ts"
+    },
+    "./microsoft": {
+      "import": "./dist/microsoft/index.js",
+      "types": "./dist/microsoft/index.d.ts"
+    },
+    "./slack": {
+      "import": "./dist/slack/index.js",
+      "types": "./dist/slack/index.d.ts"
+    },
+    "./sentry": {
+      "import": "./dist/sentry/index.js",
+      "types": "./dist/sentry/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@afterkey/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

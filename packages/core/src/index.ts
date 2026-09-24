@@ -1,0 +1,12 @@
+export { Afterkey } from "./afterkey.js";
+export type { AfterkeyConfig } from "./afterkey.js";
+export { defineProvider, ProviderError } from "./provider/factory.js";
+export type { ProviderAdapter, ProviderConfig, ProviderDefinition } from "./provider/factory.js";
+export { CredentialVault } from "./credential/vault.js";
+export { RefreshEngine } from "./credential/refresh-engine.js";
+export { EventEmitter } from "./events/emitter.js";
+export { MemoryStorageAdapter } from "./storage/memory.js";
+export { MemoryLockAdapter } from "./locking/memory.js";
+export type { StorageAdapter } from "./storage/interface.js";
+export type { LockAdapter, Lock } from "./locking/interface.js";
+export * from "./types.js";
